@@ -1,0 +1,60 @@
+body {
+    height: 100vh;
+    background-color: rgb(88, 102, 228);
+    font-family: 'Press start 2P', cursive;
+}
+
+canvas {
+    border: 5px solid black;
+    border-radius: 10px;
+    display: block;
+    margin: 50px auto;
+    background: url(back.jpg) center/cover no-repeat;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.backdrop-blur {
+    filter: blur(5px);
+}
+
+#end-menu {
+    z-index: 2;
+    display: none;
+    margin: 50px auto;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%)
+}
+
+#score-display {
+    margin-top: -600px;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-color: #2e2e2e;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease all;
+}
+
+button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
